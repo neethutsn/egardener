@@ -1,0 +1,97 @@
+{% extends 'customer/dashboard.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <div class="dash-content">
+        <div class="cart-page">
+            <div class="title">
+                <i class="uil uil-shop"></i>
+                 <span class="text">My Cart</span>
+            </div>
+             <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                     <td>
+                        <div class="cart-info">
+                            <img src="{%static 'images/cart1.webp'%}" alt="">
+                           <div>
+                                <p>Bird's Nest Fern</p>
+                                <small>Price: $27.20</small><br><br>
+                                <a href="">Remove</a>
+                           </div>
+                            <div>
+                    </td>
+                    <td><input type="text" value="1"></td>
+                    <td>$27.20</td>
+                </tr>
+                <tr>
+                    <td>
+                       <div class="cart-info">
+                           <img src="{%static 'images/cart3.webp'%}" alt="">
+                          <div>
+                               <p>Chinese Money Plant</p>
+                               <small>Price: $25.70</small><br><br>
+                               <a href="">Remove</a>
+                          </div>
+                           <div>
+                   </td>
+                   <td><input type="text" value="1"></td>
+                   <td>$25.70</td>
+                </tr>
+                <tr>
+                    <td>
+                       <div class="cart-info">
+                           <img src="{%static 'images/cart2.webp'%}" alt="">
+                          <div>
+                               <p>Snake Plant</p>
+                               <small>Price: $18.50</small><br><br>
+                               <a href="">Remove</a>
+                          </div>
+                           <div>
+                   </td>
+                   <td><input type="text" value="1"></td>
+                   <td>$18.50</td>
+                </tr>
+                <tr>
+                    <td>
+                       <div class="cart-info">
+                           <img src="{%static 'images/cart4.jpg'%}" alt="">
+                          <div>
+                               <p>African Daisy</p>
+                               <small>Price: $37.20</small><br><br>
+                               <a href="">Remove</a>
+                          </div>
+                           <div>
+                        </td>
+                        <td><input type="text" value="1"></td>
+                        <td>$37.20</td>
+                 </tr>
+            </table>
+
+            <div class="total-price">
+
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$108.60</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$143.60</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

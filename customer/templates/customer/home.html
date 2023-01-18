@@ -1,0 +1,198 @@
+{% extends 'customer/homemaster.html' %}
+{% load static %}
+
+{% block content %}
+<section id="home">
+   
+    <h1 id="text-center">DECORATE YOUR HOME NOW</h1>
+    <img src="{%static 'images/22.jpg'%}" alt="" id="image">
+    
+    <button class="button"><a href="{% url 'signin'%}"> Sign In</a></button><br>
+</section>
+
+<section id="category" class="category">
+    <h1 class="heading">shop by category</h1>
+    <div class="container">
+        <div class="grid-item">
+            <img src="{%static 'images/cat1.jpg'%}" alt="">
+            <div class="content">
+                <h3>Indoor</h3>
+                <a href="#" class="_btn">shop now</a>
+            </div>
+
+        </div>
+        <div class="grid-item">
+            <img src="{%static 'images/cat3.jpg'%}" alt="">
+            <div class="content">
+                <h3>Outdoor</h3>
+                <a href="#" class="_btn">shop now</a>
+            </div>	
+
+        </div>
+        <div class="grid-item">
+            <img src="{%static 'images/cat2.jpg'%}" alt="">
+            <div class="content">
+                <h3>flowering </h3>
+                <a href="#" class="_btn">shop now</a>
+            </div>
+
+        </div>
+        <div class="grid-item">
+            <img src="{%static 'images/cat4.jpg'%}" alt="">
+            <div class="content">
+                <h3>gift plants</h3>
+                <a href="#" class="_btn">shop now</a>
+            </div>
+
+        </div>
+        <div class="grid-item">
+            <img src="{%static 'images/cat5.jpg'%}" alt="">
+            <div class="content">
+                <h3>Bonsai</h3>
+                <a href="#" class="_btn">shop now</a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<section class="product" id="product">
+    <h1 class="heading">new products</h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <img src="{%static 'images/12.jpg'%}" alt="">
+                <h3>latest plants</h3>
+                <div class="quantity">
+                    <span> quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">$14.70 <span>$18.20</span></div>
+                <a href="#" class="_btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <img src="{%static 'images/13.jpg'%}" alt="">
+                <h3>latest plants</h3>
+                <div class="quantity">
+                    <span> quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">$34.70 <span>$38.20</span></div>
+                <a href="#" class="_btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <img src="{%static 'images/16.jpg'%}" alt="">
+                <h3>latest plants</h3>
+                <div class="quantity">
+                    <span> quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">$22.40 <span>$25.20</span></div>
+                <a href="#" class="_btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <img src="{%static 'images/15.jpg'%}" alt="">
+                <h3>latest plants</h3>
+                <div class="quantity">
+                    <span> quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">$19.70 <span>$26.20</span></div>
+                <a href="#" class="_btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <img src="{%static 'images/11.jpg'%}" alt="">
+                <h3>latest plants</h3>
+                <div class="quantity">
+                    <span> quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">$14.70 <span>$18.20</span></div>
+                <a href="#" class="_btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-9%</span>
+                <img src="{%static 'images/14.jpg'%}" alt="">
+                <h3>latest plants</h3>
+                <div class="quantity">
+                    <span> quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">$10.70 <span>$12.20</span></div>
+                <a href="#" class="_btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-22%</span>
+                <img src="{%static 'images/17.jpg'%}" alt="">
+                <h3>latest plants</h3>
+                <div class="quantity">
+                    <span> quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">$14.70 <span>$18.20</span></div>
+                <a href="#" class="_btn">add to cart</a>
+            </div>
+	
+            <div class="box">
+                <span class="discount">-12%</span>
+                <img src="{%static 'images/18.jpg'%}" alt="">
+                <h3>latest plants</h3>
+                <div class="quantity">
+                    <span> quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">$21.70 <span>$28.20</span></div>
+                <a href="#" class="_btn">add to cart</a>
+            </div>
+        </div>
+
+</section>
+
+<section class="deal" id="deal">
+    <h1 class="heading"> deal of the day</h1>
+    <div class="row">
+        <div class="image">
+            <img src="{%static 'images/deal1.jpg'%}" alt="">
+        </div>
+        <div class="content">
+            <h3>don't miss the deal</h3>
+
+            <p id="demo"></p>
+        </div>
+        
+
+        <!-- <a href="#" class="_btn">check out deal</a> -->
+
+    </div>
+</section>	
+
+<section class="contact" id="contact"> 
+<div class="container ">
+   <div class="row">
+       <div class="col-lg-6 col-md-6 col-12">
+           <img src="{%static 'images/2.jpg'%}" class="img-fluid" alt="">
+       </div>
+       <div class="col-lg-6 col-md-6 col-12">
+           <h1 class="heading">get in touch</h1>
+           <form class="mb-3">
+               <input type="text" class="form-control" placeholder="enter your name">
+               <input type="email" class="form-control" placeholder="enter your e-mail">
+               <textarea class="form-control" placeholder="enter your message"></textarea>
+               <button class="_btn">send message</button>
+           </form>
+       </div>
+   </div>
+</div>
+</section>
+{% endblock %}
+

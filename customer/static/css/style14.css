@@ -1,0 +1,214 @@
+:root{
+    --green:#3A9943;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px 20px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: #06640f;
+}
+#navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: aliceblue;
+}
+#navbar #logo{
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid white;
+}
+#navbarSupportedContent button{
+    background: white;
+}
+#section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#home{
+    background-color: #95a396;
+    height: 575px;
+    flex-direction: row;
+}
+#home h1{
+    font-size: 40px;
+    color: rgb(19, 58, 30);
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 2px;    
+}
+#home #image{
+    padding-top: 40px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+#home .button{
+     float: right; 
+}
+.button{
+
+    background: #06640f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+    
+    cursor: pointer;
+    border-radius: 20%;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1.5rem;
+}
+.footer .box-container .box{
+    flex: 1 1 14rem;
+}
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size:1rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover{
+   text-decoration: underline;
+   color: var(--green);
+}
+.footer .credit{
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    text-align: center;
+    font-weight: normal;
+}
+.footer .credit span{
+    color: var(--green);
+}
+.contact img{
+    height: 100%;
+}
+.box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.contact input{
+    margin: 10px 0px;
+}
+.contact textarea{
+    margin: 10px 0px;
+}
+form ._btn{
+    
+    background: #06640f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+/* ---------------------- */
+
+.category1{
+    padding: 10px;
+    margin: 0;
+    
+}
+.category1 h1{
+    padding-top: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.category1 p{
+    font-size: 15px;
+    padding-top: 30px;
+  
+}
+.category1 .container1{
+    display: grid;
+    grid-template-columns:300px 300px 300px  ;
+    gap: 10px;
+    grid-template-rows: 500px 500px 500px;
+   
+}
+.category1 .container1 .grid-item{
+    border: 5px solid grey;
+    padding: 30px;
+
+}
+.category1 .container1 .grid-item img{
+    height: 70%;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    object-fit: cover;
+}
+.category1 .container1 .grid-item .content{
+    position: relative;
+    background: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+
+}
+.category1 .container1 .grid-item .content h3{
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+.category1 .container1 .grid-item .content ._btn{
+    background: #06640f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
